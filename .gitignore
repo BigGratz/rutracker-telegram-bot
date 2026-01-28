@@ -1,0 +1,80 @@
+# Секретные файлы
+.env
+.env.*
+secrets/
+credentials/
+
+# Базы данных
+*.db
+*.sqlite
+*.sqlite3
+bot.db
+
+# Логи
+*.log
+bot.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+
+# Системные
+.DS_Store
+Thumbs.db
+
+# Бэкапы
+*.bak
+*.backup
+backups/
+
+# Секретные файлы
+.env
+.secrets
+*.key
+*.pem
+
+# Базы данных
+bot.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Логи
+bot.log
+*.log
+logs/
+
+# Python кэш
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Бэкапы
+backups/
+*.bak
+*.backup
+
+# Идеи редакторов
+.vscode/
+.idea/

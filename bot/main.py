@@ -197,11 +197,11 @@ async def check_new_games():
         
         if not new_games:
             logger.info("Новых игр не найдено.")
-            # Отправляем сообщение, что новых игр не найдено
-            await bot.send_message(
-                config.ADMIN_ID,
-                "ℹ️ Проверка завершена. Новых игр не найдено."
-            )
+            # ЗАКОММЕНТИРОВАНО: Отправка сообщения о пустой проверке
+            # await bot.send_message(
+            #     config.ADMIN_ID,
+            #     "ℹ️ Проверка завершена. Новых игр не найдено."
+            # )
             return
         
         logger.info(f"Найдено {len(new_games)} новых игр.")

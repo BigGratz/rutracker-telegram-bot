@@ -1,11 +1,12 @@
-  📦 RuTracker Telegram Bot :root { --primary: #2d3748; --secondary: #4a5568; --accent: #4299e1;
+# 📦 RuTracker Telegram Bot
 
-📦 RuTracker Telegram Bot
-=========================
+![Python](https://img.shields.io/badge/python-3.12%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-production%20ready-brightgreen)
 
-Python 3.12+ MIT License Production Ready
+---
 
-🎮 О проекте
+🎮 **О проекте**
 ------------
 
 **RuTracker Telegram Bot** — это мощный автоматический бот для отслеживания новых игр в разделе "Горячие Новинки" (f=635) на RuTracker.org. Бот парсит форум каждые 5 минут, находит новые раздачи и отправляет подробные уведомления в Telegram.

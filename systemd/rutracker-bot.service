@@ -5,11 +5,23 @@ After=network.target
 [Service]
 Type=simple
 User=rutrackerbot
+Group=rutrackerbot
 WorkingDirectory=/home/rutrackerbot/rutracker-telegram-bot
 Environment="PATH=/home/rutrackerbot/rutracker-telegram-bot/venv/bin"
-ExecStart=/home/rutrackerbot/rutracker-telegram-bot/venv/bin/python run_bot.py
+ExecStart=/home/rutrackerbot/rutracker-telegram-bot/venv/bin/python /home/rutrackerbot/rutracker-telegram-bot/run_bot.py
 Restart=always
 RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=rutracker-bot
+
+# Ограничения ресурсов
+MemoryLimit=512M
+CPUQuota=50%
+
+# Безопасность (минимальная)
+NoNewPrivileges=true
+PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target

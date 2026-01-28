@@ -10,3 +10,5 @@ asyncpg==0.29.0
 pytz==2024.1
 html2text==2020.1.16
 aiofiles==23.2.1
+aiosqlite==0.22.1
+brotli==1.1.0
